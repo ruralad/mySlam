@@ -1,2 +1,3 @@
 # mySlam
-personal online slambook
+
+personal slambook for everyone

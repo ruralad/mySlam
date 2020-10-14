@@ -1,0 +1,21 @@
+{
+  "name": "lowdb-demo",
+  "version": "0.0.1",
+  "description": "Example app showing use of Lowdb",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "ejs":"3.x.x",
+    "mongoose" : "latest",
+    "body-parser":"latest"
+  },
+  "engines": { "node": "6.x" }, 
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "license": "MIT"
+}
