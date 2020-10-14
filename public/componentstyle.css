@@ -1,0 +1,16 @@
+.header{
+  background-color:cyan;
+  
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  display: flex;
+  flex-direction:column;
+}
+.header h1,p{
+  margin-left:10px;
+}
+.header p{
+  font-size:.7rem;
+}

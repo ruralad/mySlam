@@ -1,0 +1,26 @@
+    <%- include("components/sub/meta") %>
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>slambook-dev</title>
+<body>
+    <%- include("components/sub/header") %>
+
+    <main>
+      <h1 class="bold">
+        make
+      </h1>
+      <p>enter your nickname, and create your own wall</p>
+      <form method="POST" action="/users">
+        <input
+          id="name"
+          name="name"
+          type="text"
+          maxlength="12"
+          placeholder="thangu"
+          required
+        />
+        <button type="submit">create</button>
+      </form>
+      <div id="warning"></div>
+    </main>
+</body>

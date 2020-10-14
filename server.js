@@ -26,7 +26,7 @@ mongoose
 
 //home
 app.get("/", function(request, response) {
-  response.sendFile(__dirname + "/views/index.html");
+  response.render('../pages/index');
 });
 
 //make new users
@@ -55,23 +55,23 @@ app.get("/book/:id", (req, res) => {
     if (result) {
       Book.findOne({ title: req.params.id }).then(data => {
         console.log(data.body);
-        res.render("../pages/welcome", { name: data.title, body: data.body });
+        res.render("../pages/components/home", { name: data.title, body: data.body });
       });
     } else {
-      res.render("../pages/notfound", { name: req.params.id });
+      res.render("../pages/components/notfound", { name: req.params.id });
     }
   });
 });
 
 //unique userpage, based on their nickname
-app.get("/book/:name/write", (req, res) => {
+app.get("/writeto/:name", (req, res) => {
   Book.exists({ title: req.params.name }).then(result => {
     if (result) {
       Book.findOne({ title: req.params.name }).then(data => {
-        res.render("../pages/new", { name: data.title });
+        res.render("../pages/components/write", { name: data.title });
       });
     } else {
-      res.render("../pages/notfound", { name: req.params.name });
+      res.render("../pages/components/notfound", { name: req.params.name });
     }
   });
 });
