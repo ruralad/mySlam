@@ -1,51 +1,56 @@
 /* styles */
 /* called by your view template */
 
-* {
-  box-sizing: border-box;
-}
-
 body {
+  display: block;
   font-family: helvetica, arial, sans-serif;
-  margin: 25px;
+  margin: 0;
+  width: 100%;
   font-size: 15px;
+  
+  overflow-x:hidden;
 }
 
 h1 {
   font-weight: bold;
   color: pink;
 }
-h3{
-  font-size:1rem;
+h3 {
+  font-size: 1rem;
   font-weight: normal;
 }
-p{
-  margin-top:-20px;
+p {
+  margin-top: -20px;
 }
 .bold {
   font-weight: bold;
 }
 section {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top:50px;
+  margin-top: 50px;
 }
 .card {
   background-color: wheat;
-  min-width: 15vw;
+  max-width: 200px;
   height: auto;
   border-radius: 5px;
 
   margin-right: 20px;
 }
-.content{
-  padding:5px;
+.content {
+  padding: 5px;
 }
-.content p{
-  font-size:.9rem;
-  margin-top:-5px;
-  margin-left:15px;
-  opacity:.6;
+.content h3{
+  margin-left: 15px;
+  opacity:0.8;
+}
+.content p {
+  font-size: 0.9rem;
+  margin-top: -5px;
+  margin-left: 15px;
+  opacity: 0.6;
 }
 
 #form {
@@ -54,8 +59,6 @@ section {
   padding: 15px;
   background-color: cyan;
   display: inline-block;
-  width: 100%;
-  max-width: 340px;
   border-radius: 3px;
 }
 
@@ -63,7 +66,6 @@ input {
   display: block;
   margin-bottom: 10px;
   padding: 5px;
-  width: 100%;
   border: 1px solid lightgrey;
   border-radius: 3px;
   font-size: 16px;
@@ -102,4 +104,22 @@ footer > a {
 
 .nicejob {
   text-decoration: line-through;
+}
+
+main {
+  padding: 10px;
+  margin-top: 50px;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 420px) {
+  body {
+    width: 100%;
+    font-size: 13px;
+  }
 }
