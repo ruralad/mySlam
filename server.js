@@ -87,7 +87,7 @@ app.post("/book/:id/write/to", (req, res) => {
           docs.body.push({ name: req.body.addName, comment: req.body.comment });
           docs
             .save()
-            .then(res.send("success"))
+            .then(res.send("nice! now go tell you've written something to your friend. or don't tell. do whatever you want"))
             .catch(error => console.log(error));
         }
       });
