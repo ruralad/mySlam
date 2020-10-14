@@ -1,0 +1,105 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  font-size: 15px;
+}
+
+h1 {
+  font-weight: bold;
+  color: pink;
+}
+h3{
+  font-size:1rem;
+  font-weight: normal;
+}
+p{
+  margin-top:-20px;
+}
+.bold {
+  font-weight: bold;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  margin-top:50px;
+}
+.card {
+  background-color: wheat;
+  min-width: 15vw;
+  height: auto;
+  border-radius: 5px;
+
+  margin-right: 20px;
+}
+.content{
+  padding:5px;
+}
+.content p{
+  font-size:.9rem;
+  margin-top:-5px;
+  margin-left:15px;
+  opacity:.6;
+}
+
+#form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}

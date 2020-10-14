@@ -1,0 +1,29 @@
+<link href="/style.css" rel="stylesheet" type="text/css">
+
+<h1>
+  write something nice to <%=name%>.
+</h1>
+<p>
+  or not nice. write what you want
+</p>
+<form id="form" name="form" action="/book/<%=name%>/write/to" method="post">
+  <label>your name</label>
+        <input
+          id="addName"
+          name="addName"
+          type="text"
+          maxlength="100"
+          placeholder="manku"
+          required
+        />
+  <label>your precious words</label>
+        <input
+          id="comment"
+          name="comment"
+          type="text"
+          maxlength="300"
+          placeholder="lorem ipsum dora sit amet blaah blaah blaah i had a sheep, now its mutton curry lol"
+          required
+        />
+        <button type="submit">send</button>
+</form>

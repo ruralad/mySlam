@@ -1,0 +1,27 @@
+<link href="/style.css" rel="stylesheet" type="text/css">
+
+<title>  personal slambook of <%=name%> | mySlam
+</title>
+<h1>
+  <%=name%>
+</h1>
+<%if(body.length==0) {%>
+<p>
+  this will be your slambook. you'll see others' writings below (if they have wrote something about you yet)
+  <br> if they didn't write anything, well, send this link to them - personalslambook.glitch.me/book/<%=name%>/write
+</p>
+<%}else{%>
+<p>
+  looks like you've got some writings
+</p>
+<%}%>
+<section>
+<%body.forEach(function(page){%>
+  <div class="card">
+    <div class="content">
+      <h3>@<%=page.name%> wrote,</h3>
+      <p><%=page.comment%></p>
+    </div>
+  </div>
+<%});%>
+</section>
